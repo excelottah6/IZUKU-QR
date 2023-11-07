@@ -103,12 +103,12 @@ app.get("/", (req, res) => {
  }, 20000)
           try{
           let data = await fs.readFileSync(__dirname+'/auth_info_baileys/creds.json','utf-8')
-         //  await session.sendMessage(session.user.id, {text: 'Secktor;;;'+btoa(data)});   
+         //  await session.sendMessage(session.user.id, {text: 'IZUKU;;;'+btoa(data)});   
            await delay(800)
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
-           await session.sendMessage(session.user.id, {text: 'Secktor;;;'+c});	
-          let cc = `*Thanks for choosing Secktor-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+           await session.sendMessage(session.user.id, {text: 'IZUKU;;;'+c});	
+          let cc = `*Thanks for choosing IZUKU-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making IZUKU-bot_\n\nVisit secktorbot.me\n*1.Repo:* https://github.com/excelottah6/IZUKU-MD\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* https://heroku.com/deploy?template=https://github.com/excelottah6/IZUKU-MD\n*4.public group:*https://chat.whatsapp.com/DHTBHaBUK8w1a2pzVj4HnV`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
@@ -176,13 +176,13 @@ app.get("/modules", (req, res) => {
   res.sendFile(__dirname+"/public/module.html");
 });
 // app.get('/koyeb', (req, res) => {
-// res.redirect(301, 'https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/sampandey001/koyeb:latest&env[SESSION_ID]&env[OWNER_NUMBER]&env[MONGODB_URI]&&env[OWNER_NAME]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[ANTI_BAD_WORD]=fuck&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&name=secktorbot&env[KOYEB_NAME]=sampandey001&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000');
+// res.redirect(301, 'https://app.koyeb.com/apps/deploy?type=docker&image=quay.io/sampandey001/koyeb:latest&env[SESSION_ID]&env[OWNER_NUMBER]&env[MONGODB_URI]&&env[OWNER_NAME]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[ANTI_BAD_WORD]=fuck&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&name=IZUKUBOT&env[KOYEB_NAME]=excelottah6&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000');
 // });
 app.get("/koyeb", (req, res) => {
   res.sendFile(__dirname+"/public/deploy.html");
 });
 app.get('/koyeb2', (req, res) => {
-res.redirect(301, 'https://app.koyeb.com/apps/deploy?type=git&repository=github.com/https://github.com/SamPandey001/Secktor-Md&branch=main&build_command=npm%20i&run_command=npm%20start&env[SESSION_ID]&env[OWNER_NUMBER]&env[MONGODB_URI]&&env[OWNER_NAME]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[ANTI_BAD_WORD]=fuck&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=Sam;Pandey&name=secktorbot&env[KOYEB_NAME]=sampandey001&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000');
+res.redirect(301, 'https://app.koyeb.com/apps/deploy?type=git&repository=github.com/https://github.com/excelottah6/IZUKU-Md&branch=main&build_command=npm%20i&run_command=npm%20start&env[SESSION_ID]&env[OWNER_NUMBER]&env[MONGODB_URI]&&env[OWNER_NAME]&env[PREFIX]=.&env[THUMB_IMAGE]=https://raw.githubusercontent.com/SecktorBot/Brandimages/main/logos/SocialLogo%201.png&env[email]=sam@secktor.live&env[global_url]=instagram.com&env[FAKE_COUNTRY_CODE]=92&env[READ_MESSAGE]=false&env[DISABLE_PM]=false&env[ANTI_BAD_WORD]=fuck&env[WORKTYPE]=public&env[THEME]=SECKTOR&env[PACK_INFO]=IZUKU;MIDORIYA&name=IZUKU&env[KOYEB_NAME]=excelottah6&env[ANTILINK_VALUES]=chat.whatsapp.com&env[PORT]=8000');
 	     });
 app.get('/railway', (req, res) => {
 res.redirect(301, 'https://railway.app/new/template/hbw5a1?referralCode=okazYt'); 
@@ -191,21 +191,21 @@ app.get('/youtube', (req, res) => {
   res.sendFile(__dirname+"/public/main.html");
 });
 app.get('/support', (req, res) => {
-res.redirect(301, 'https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl');
+res.redirect(301, 'https://chat.whatsapp.com/IbyUlj9QS122wbSMswyvMOl');
 });
 app.get('/mongo', (req, res) => {
 res.redirect(301, 'https://www.youtube.com/watch?v=WWrpBCBlyuo');
 });
 
 app.get('/wiki', (req, res) => {
-res.redirect(301, 'https://github.com/SamPandey001/Secktor-Md/wiki');
+res.redirect(301, 'https://github.com/excelottah6/IZUKU-Md/wiki');
 });
 
 app.get('/plugins', (req, res) => {
-res.redirect(301, 'https://github.com/SamPandey001/Secktor-Plugins');
+res.redirect(301, 'https://github.com/excelottah6/IZUKU-Plugins');
 });
 app.get('/repo', (req, res) => {
-res.redirect(301, 'https://github.com/SamPandey001/Secktor-Md');
+res.redirect(301, 'https://github.com/excelottah6/IZUKU-Md');
 });
 app.get('/termux', (req, res) => {
 res.redirect(301, 'https://f-droid.org/repo/com.termux_118.apk');
@@ -217,7 +217,7 @@ app.get('/public', (req, res) => {
 res.redirect(301, 'https://chat.whatsapp.com/KWWFhiP1yNn2Sc9TDZpHXJ');
 });
 app.get('/wiki/mongo', (req, res) => {
-res.redirect(301, 'https://github.com/SamPandey001/Secktor-Md/wiki/Mongodb-URI');
+res.redirect(301, 'https://github.com/excelottah6/IZUKU-Md/wiki/Mongodb-URI');
 });
 app.get('/session', (req, res) => {
 res.redirect(301, 'https://secktor-md.koyeb.app/'); 
@@ -236,9 +236,9 @@ app.get('/ttp/:text', async (req, res) => {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   // Set text properties
   const fontSize = 30;
-  const fontFamily = 'Flick Bold Hollow';
+  const fontFamily = 'Verdana';
   ctx.font = `${fontSize}px ${fontFamily}`;
-  ctx.fillStyle = 'white';
+  ctx.fillStyle = 'green';
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
   const centerX = canvas.width / 2;
@@ -285,10 +285,10 @@ app.get('/attp/:text', async (req, res) => {
   encoder.start();
   encoder.setRepeat(0); // 0 for repeat indefinitely
   encoder.setDelay(frameDuration);
-  encoder.setQuality(10); // Adjust as needed
+  encoder.setQuality(15); // Adjust as needed
   const canvas = createCanvas(300, 300);
   const ctx = canvas.getContext('2d');
-  ctx.font = '30px Arial';
+  ctx.font = '30px Deja Vu';
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
   const centerX = canvas.width / 2;

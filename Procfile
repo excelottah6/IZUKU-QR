@@ -1,1 +1,1 @@
-web: node sam.js
+web: node IZUKU.js

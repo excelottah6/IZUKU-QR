@@ -18,7 +18,7 @@ div:after {
   -moz-filter: blur(5vw);
   -ms-filter: blur(5vw);
   filter: blur(5vw);
-  background: linear-gradient(270deg, #0fffc1, #7e0fff);
+  background: linear-gradient(270deg, #00FF00, #008000)
   background-size: 200% 200%;
   -webkit-animation: animateGlow 10s ease infinite;
           animation: animateGlow 10s ease infinite;
